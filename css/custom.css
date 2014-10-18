@@ -1,0 +1,355 @@
+@font-face {
+	font-family: 'Bebas Neue';
+		src: 
+		url('/fonts/BebasNeue.otf') 
+		format('opentype');
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: 
+		url('/fonts/PTF55F.ttf') 
+		format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: 
+		url('/fonts/PTF56F.ttf') 
+		format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: 
+		url('/fonts/PTF75F.ttf') 
+		format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: 
+		url('/fonts/PTF76F.ttf') 
+		format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PT Serif Caption';
+	src: 
+		url('/fonts/PTZ55F.ttf') 
+		format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'PT Serif Caption';
+	src: 
+		url('/fonts/PTZ56F.ttf') 
+		format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raavi';
+	src: 
+		url('/fonts/raavi.ttf') 
+		format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Raavi';
+	src: 
+		url('/fonts/raavib.ttf') 
+		format('truetype');
+	font-weight: bold;
+}
+
+/* HEADER - NAVIGATION BAR */
+
+.navbar-default {
+	border-width: 0;
+	background-color: #ebeaef;
+}
+
+@media (max-width: 768px) {
+	.navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.navbar-default .navbar-brand {
+	font-family: Raavi;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: -0.02em;
+	color: #e74c3c;
+	padding-top: 19px;
+	padding-bottom: 11px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #c0392b;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-family: Raavi;
+	text-transform: uppercase;
+	color: black;
+}
+
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav>li>a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.navbar-default .navbar-nav>li>a:not(.btn) {
+	padding-top: 17px;
+	padding-bottom: 13px;
+	background-color: rgba(235,234,239,0);
+	-webkit-transition: background-color 0.5s, color 0.25s;
+	-moz-transition: background-color 0.5s, color 0.25s;
+	-o-transition: background-color 0.5s, color 0.25s;
+	transition: background-color 0.5s, color 0.25s;
+}
+
+.navbar-default .navbar-nav>li>a:not(.btn):hover,
+.navbar-default .navbar-nav>li>a:not(.btn):focus {
+	background-color: #e74c3c;
+	color: white;
+	-webkit-transition: background-color 0.5s, color 0.25s;
+	-moz-transition: background-color 0.5s, color 0.25s;
+	-o-transition: background-color 0.5s, color 0.25s;
+	transition: background-color 0.5s, color 0.25s;
+}
+
+.navbar-default .navbar-nav>li>a.btn {
+	border-width: 0;
+	border-radius: 0;
+	background-color: #e74c3c;
+	color: white;
+	-webkit-transition: background-color 0.5s, color 0.25s;
+	-moz-transition: background-color 0.5s, color 0.25s;
+	-o-transition: background-color 0.5s, color 0.25s;
+	transition: background-color 0.5s, color 0.25s;
+}
+
+.navbar-default .navbar-nav>li>a.btn:hover,
+.navbar-default .navbar-nav>li>a.btn:focus {
+	background-color: #c0392b;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav>li>a.btn {
+		padding-top: 8px;
+		padding-bottom: 4px;
+		margin-top: 9px;
+		margin-left: 10px;
+	}	
+}
+
+@media (max-width: 768px) {
+	.navbar-default .navbar-nav>li>a.btn {
+		padding-top: 13px;
+		padding-bottom: 7px;
+	}
+}
+
+.page-content {
+	margin-top: 50px;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.page-content>.row {
+	padding-top: 15px;
+}
+
+.row#jumbotron {
+	background: url('/img/jumbotron.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: calc(100vh - 50px);
+	max-height: 1200px;
+	min-height: 640px;
+}
+
+.container-fluid.container-material {
+	box-shadow: 1.5px 2.5px 13px 5px #464646;
+	background-color: white;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Bebas Neue;
+}
+
+h1>small, h2>small, h3>small, h4>small, h5>small, h6>small {
+	font-family: PT Serif;
+}
+
+p {
+	font-family: PT Serif;
+}
+
+.btn.btn-default {
+	font-family: Bebas Neue;
+	font-size: 1.75em;
+	background-color: #efeaeb;
+	color: #e74c3c;
+	width: 100%;
+	max-width: 10em;
+	border-width: 0;
+	border-radius: 0;
+	padding-top: 4px;
+	padding-bottom: 2px;
+	display: block;
+	margin: auto;
+	-webkit-transition: background-color 0.5s, color 0.25s;
+	-moz-transition: background-color 0.5s, color 0.25s;
+	-o-transition: background-color 0.5s, color 0.25s;
+	transition: background-color 0.5s, color 0.25s;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:focus {
+	background-color: #e74c3c;
+	color: white;
+	-webkit-transition: background-color 0.5s, color 0.25s;
+	-moz-transition: background-color 0.5s, color 0.25s;
+	-o-transition: background-color 0.5s, color 0.25s;
+	transition: background-color 0.5s, color 0.25s;
+}
+
+.page-content>.row>h1 {
+	text-align: center;
+}
+
+.page-content>.row>h1>small {
+	font-size: 0.4em;
+	position: relative;
+	top: -15px;
+}
+
+.page-content>.row.row-red {
+	background-color: #E84C3D;
+}
+
+.page-content>.row.row-red>h1 {
+	color: white;
+	text-shadow: 3px 3px 0px #c0392b;
+}
+
+.page-content>.row.row-red>h1>small {
+	color: white;
+	text-shadow: none
+}
+
+.page-content>.row.row-red .container-material {
+	box-shadow: 1.5px 2.5px 13px 5px #c0392b;
+}
+
+.page-content>.row#sponsors {
+	background: url('/img/sponsors.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.page-content>.row.row-gray>h1 {
+	color: #252525;
+	text-shadow: 3px 3px 0px #acacac;
+}
+
+.page-content>.row.row-gray>h1>small {
+	color: #252525;
+	text-shadow: none
+}
+
+.page-content>.row#sponsors img {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+footer>.row:first-of-type {
+	background-color: #ebeaef;
+}
+
+a.footer-brand {
+	font-family: Raavi;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: -0.02em;
+	color: #e74c3c;
+	padding-top: 19px;
+	padding-bottom: 11px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+footer .footer-map {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+footer .footer-map>a {
+	font-family: Raavi;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1em;
+	color: #252525;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+footer .footer-map>a:hover,
+footer .footer-map>a:focus {
+	color: #e74c3c;
+	text-decoration: none;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+}
+
+footer>.row:last-of-type {
+	background-color: white;
+	font-family: Raavi;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: 0.8em;
+	text-align: center;
+}

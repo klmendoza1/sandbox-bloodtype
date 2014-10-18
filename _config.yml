@@ -1,0 +1,7 @@
+# Site settings
+title: Bloodtype
+description: "Every drop counts."
+
+# Build settings
+markdown: kramdown
+permalink: pretty
