@@ -132,6 +132,7 @@
 	transition: background-color 0.5s, color 0.25s;
 }
 
+.navbar-default .navbar-nav>li>a:not(.btn).active,
 .navbar-default .navbar-nav>li>a:not(.btn):hover,
 .navbar-default .navbar-nav>li>a:not(.btn):focus {
 	background-color: #e74c3c;
@@ -182,9 +183,13 @@
 	margin-top: 50px;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 .row {
-	margin-left: 0;
-	margin-right: 0;
+	/*margin-left: 0;
+	margin-right: 0;*/
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -193,13 +198,16 @@
 	padding-top: 15px;
 }
 
-.row#jumbotron {
+.row.jumbotron-custom {
+	height: calc(100vh - 50px);
+	max-height: 1200px;
+	min-height: 480px;
+}
+
+.row.jumbotron-custom#home {
 	background: url('/img/jumbotron.jpg');
 	background-size: cover;
 	background-attachment: fixed;
-	height: calc(100vh - 50px);
-	max-height: 1200px;
-	min-height: 640px;
 }
 
 .container-fluid.container-material {
@@ -207,6 +215,10 @@
 	background-color: white;
 	padding-bottom: 10px;
 	margin-bottom: 20px;
+}
+
+.row.jumbotron-custom .container-fluid.container-material>h2 {
+	color: #e74c3c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -278,6 +290,10 @@ p {
 	box-shadow: 1.5px 2.5px 13px 5px #c0392b;
 }
 
+.page-content>.row.row-red .container-material>h3 {
+	color: #c0392b;
+}
+
 .page-content>.row#sponsors {
 	background: url('/img/sponsors.jpg');
 	background-size: cover;
@@ -299,22 +315,63 @@ p {
 	padding-bottom: 50px;
 }
 
+/* FOOTER */
+
 footer>.row:first-of-type {
 	background-color: #ebeaef;
 }
 
-a.footer-brand {
+.footer-brand>* {
+	margin-top: 10px;
+}
+
+.footer-brand img {
+	width: 100px;
+	height: auto;
+	display: inline;
+	vertical-align: middle;
+}
+
+.footer-brand>div {
+	display: inline-block;
+	position: relative;
+	top: 20px;
+	margin-left: 10px;
+	line-height: 1.7em;
+	text-transform: uppercase;
+	letter-spacing: 0.38em;
+	font-size: 0.7em;
+}
+
+.footer-brand>div>a {
 	font-family: Raavi;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 3em;
 	letter-spacing: -0.02em;
 	color: #e74c3c;
 	padding-top: 19px;
 	padding-bottom: 11px;
+	text-transform: initial;
 	-webkit-transition: color 0.5s;
 	-moz-transition: color 0.5s;
 	-o-transition: color 0.5s;
 	transition: color 0.5s;
+}
+
+.footer-brand>div>a:hover,
+.footer-brand>div>a:focus {
+	color: #c0392b;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	footer>.row:first-of-type>* {
+		text-align: center;
+	}
 }
 
 footer .footer-map {
@@ -352,4 +409,101 @@ footer>.row:last-of-type {
 	padding-bottom: 10px;
 	font-size: 0.8em;
 	text-align: center;
+}
+
+/* ABOUT */
+
+.row.jumbotron-custom#about {
+	background: url('/img/about.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.page-content>.row.row-black {
+	background-color: #464646;
+}
+
+.page-content>.row.row-black>h1 {
+	color: white;
+	text-shadow: 3px 3px 0px #898989;
+}
+
+.page-content>.row.row-black>h1>small {
+	color: white;
+	text-shadow: none
+}
+
+.page-content>.row.row-black .container-material {
+	box-shadow: 1.5px 2.5px 13px 5px #2b2b2b;
+}
+
+.container-profile {
+	padding-top: 15px;
+}
+
+.container-profile img {
+	width: 100px;
+	height: auto;
+	display: inline;
+	vertical-align: top;
+}
+
+.container-profile>div {
+	display: inline-block;
+	width: calc(100% - 115px);
+	margin-left: 10px;
+}
+
+.container-profile>div>h2 {
+	margin-top: 0.2em;
+	line-height: 0.8em;
+
+}
+
+.page-content>.row.row-white {
+	background-color: #ffffff;
+}
+
+.page-content>.row.row-white>h1 {
+	color: #464646;
+	text-shadow: 3px 3px 0px #dedede;
+}
+
+.page-content>.row.row-white>h1>small {
+	color: #464646;
+	text-shadow: none
+}
+
+.page-content>.row.row-white .container-material {
+	box-shadow: 1.5px 2.5px 13px 5px #dedede;
+	-webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.page-content>.row.row-white .container-material.container-emphasis:hover,
+.page-content>.row.row-white .container-material.container-emphasis:focus {
+	box-shadow: 4.5px 5.5px 13px 5px #b3b3b3;
+	-webkit-transition: box-shadow 0.5s;
+	-moz-transition: box-shadow 0.5s;
+	-o-transition: box-shadow 0.5s;
+	transition: box-shadow 0.5s;
+}
+
+.container-hospital>img {
+	margin-left: -15px;
+	margin-right: -15px;
+	max-width: calc(100% + 31px);
+}
+
+.container-hospital>h3 {
+	color: #c0392b;
+}
+
+.link-nodecor:hover,
+.link-nodecor:focus,
+.link-nodecor *:hover,
+.link-nodecor *:focus {
+	text-decoration: none;
 }
